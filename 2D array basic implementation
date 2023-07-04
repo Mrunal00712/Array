@@ -13,6 +13,8 @@ main(){
 			cin>> arr[row][col];
 		}
 	}
+		//or
+	//int arr[3][4] = {{1,11,111,1111}, {2,22,222,2222}, {3,33,333,3333}};
 	
 	
 /*	// taking input --> col wise input
