@@ -13,6 +13,19 @@ bool ispresent(int arr[][4], int target, int row, int col){
 	return 0;
 }
 
+// to print row wise sum
+void printsum(int arr[][4], int row, int col) {
+	cout << "printing sum -> " <<endl;
+	for(int row=0; row<3; row++){
+		int sum =0;
+		for(int col=0; col<4; col++){
+			sum += arr[row][col];
+		}
+		cout<< sum<<" ";
+	}
+	cout<< endl;
+}
+
 main(){
 	int arr[3][4];
 	//taking column wise input
@@ -42,4 +55,6 @@ main(){
 	else{
 		cout<<"not found";
 	}
+	
+	printsum(arr, 3, 4);
 }
